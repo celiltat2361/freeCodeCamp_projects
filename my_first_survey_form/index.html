@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+
+            <h1 id="title">Personal Information Survey Form</h1>
+            <p id="description">Can you help us get to know you?</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name: </label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name." required />
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email: </label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                    required />
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age: </label>
+                <input type="number" name="age" class="form-control" id="number" placeholder="Enter your age" min="0"
+                    max="200" />
+            </div>
+
+            <div class="form-goup">
+                <label for="roles" id="dropdown-label">What is your current role?</label>
+
+                <select id="dropdown" name="roles">
+                    <option value="student1">High School Student</option>
+                    <option value="student2" selected>Undergraduate</option>
+                    <option value="student3">Master Student</option>
+                    <option value="student4">Phd Student</option>
+                    <option value="student5">Full Time Job</option>
+                </select>
+            </div>
+           
+            <div class="form-group">
+                <p>Which role are you interested in web development?</p>
+                <input type="radio" name="study-roles" value="frontend"> Front End Developer <br>
+                <input type="radio" name="study-roles" value="fullstack"> Fullstack Developer <br>
+                <input type="radio" name="study-roles" value="frontend"> Back end Developer <br>
+            </div>
+
+            <div class="form-group">
+                <p>What is your favorite framework or js. library</p>
+                <input type="checkbox" id="frame1" name="frame1" value="ReactJS"> ReactJS
+                <input type="checkbox" id="frame2" name="frame2" value="Angular"> Angular
+                <input type="checkbox" id="frame3" name="frame3" value="Vue.js"> Vue.js
+            </div>
+
+            <div class="form-group">
+                <p>Your comments are important to us.</p>
+                <textarea name="comment" id="comment" cols="30" rows="10"
+                    placeholder="You can write your comment here.."></textarea>
+            </div>
+
+            <div class="form-group"></div>
+            <input type="submit" id="submit">
+        </form>
+
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+        </script>
+    </div>
+</body>
+
+</html>
