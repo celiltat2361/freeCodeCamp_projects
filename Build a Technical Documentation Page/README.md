@@ -1,1 +1,3 @@
-This is my a "Build a Technical Documentation Page" project on freecodecamp.org
+This is my a simple "Build a Technical Documentation Page" project on freecodecamp.org
+
+
