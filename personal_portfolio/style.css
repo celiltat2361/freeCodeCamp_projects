@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #92c6f0;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+
+nav {
+background-color: rgb(91, 91, 97);
+color: #fff;
+display: flex;
+justify-content: flex-end;
+padding: 20px;
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+z-index: 100;
+}
+
+nav a {
+    color: #fff;
+    position: relative;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-image: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+
+header::after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+
+}
+
+header h1 {
+    font-size: 60px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+header p {
+    font-size: 30px;
+    margin: 0;
+}
+
+section {
+    text-align: center;
+    padding: 40px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section p {
+    margin-top: 0;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 810px;
+    margin: 20px auto 0;
+    
+
+}
+
+.project-tile {
+   max-width: 250px; 
+   margin: 10px;
+   text-decoration: none;
+   transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: scale(1.1);
+}
+
+.project-tile img {
+    max-width: 100%;
+    
+}
+
+.project-tile p {
+    color: #000;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.bg-pinkish {
+   background-color: #dae4e2; 
+   color: #000;
+}
+
+.social-ul {
+   display: flex;
+   flex-wrap: wrap;
+   list-style-type: none;
+   justify-content: center;
+   padding: 0;
+   margin: 0; 
+}
+
+.social-ul a {
+    color: #000;
+    font-size: 40px;
+    margin: 5px 10px;
+    padding: 5px;
+}
+
+footer {
+    background-color:rgb(91, 91, 97);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 440px) {
+    section {
+        padding: 20px;
+    }
+}
+
